@@ -1,17 +1,23 @@
 import { useForm, Controller } from "react-hook-form";
 import DatePicker from "react-datepicker";
-import moment from "moment";
+import {
+    addYears,
+    differenceInDays,
+    isBefore,
+    setYear,
+    startOfToday,
+} from "date-fns";
 
 import "react-datepicker/dist/react-datepicker.css";
 import s from "./Form.module.css";
 
 function daysUntilBirthday(date: Date) {
-    const m1 = moment(date);
-    m1.set({ year: moment().year() });
-    if (m1.isBefore(moment())) {
-        m1.add(1, "y");
+    let m1 = date;
+    m1 = setYear(m1, startOfToday().getFullYear());
+    if (isBefore(m1, startOfToday())) {
+        m1 = addYears(m1, 1);
     }
-    return m1.diff(moment(), "days");
+    return differenceInDays(m1, startOfToday());
 }
 
 async function validatePhoneNumber(value: string) {

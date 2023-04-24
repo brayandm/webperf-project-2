@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "dependencies": {
     "@apollo/client": "^3.6.6",
+    "date-fns": "^2.0.1",
     "google-libphonenumber": "^3.2.27",
     "graphql": "^16.5.0",
     "lodash": "4.17.20",
     "lodash-es": "^4.17.21",
-    "moment": "^2.29.3",
     "react-datepicker": "^4.8.0",
     "react-hook-form": "^7.31.3"
   },
