@@ -7,7 +7,7 @@
 }
 
 .imageContainer::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -20,6 +20,7 @@
     display: block;
     width: 100%;
     height: auto;
+    aspect-ratio: 5238/3622;
 }
 
 .center {
