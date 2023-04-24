@@ -4,6 +4,7 @@
 
 .imageContainer {
     position: relative;
+    will-change: transform;
 }
 
 .imageContainer::after {
