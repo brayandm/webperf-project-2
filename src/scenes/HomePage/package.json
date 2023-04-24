@@ -6,12 +6,14 @@
     "google-libphonenumber": "^3.2.27",
     "graphql": "^16.5.0",
     "lodash": "4.17.20",
+    "lodash-es": "^4.17.21",
     "moment": "^2.29.3",
     "react-datepicker": "^4.8.0",
     "react-hook-form": "^7.31.3"
   },
   "devDependencies": {
     "@types/google-libphonenumber": "^7.4.23",
+    "@types/lodash-es": "^4.17.7",
     "@types/react-datepicker": "^4.4.1"
   }
 }
